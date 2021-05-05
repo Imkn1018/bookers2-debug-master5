@@ -1,4 +1,3 @@
 # README
 
-[Rspec終了]
 
