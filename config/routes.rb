@@ -5,4 +5,11 @@ Rails.application.routes.draw do
   resources :homes, only: [:about]
   resources :users
   resources :books
+  
+  resources :users do
+    resource :relationships, only: [:create, :destroy]
+      get :follows, on: :member
+      get :followers, on: :member
+  end
+
 end
